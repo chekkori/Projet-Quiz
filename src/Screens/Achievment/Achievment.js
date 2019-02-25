@@ -39,9 +39,20 @@ export default class Achievment extends Component {
                             </div>
                         </div>
                     </div>
-                    {/* la Deuxiem colonne */}
+                    {/* la troisième colonne */}
                     <div className="col-sm">
-                    One of three columns
+                    <div className="card text-center" style={{marginTop:'10px', height:'365px'}}>
+                            <div className="card-block">
+                                <img className="img-fluid" alt="" src={require('../../assets/images/php.png')}/>
+                                <div className="card-title" style={{marginTop:'45px'}}>
+                                    <h4> PHP <i className="fa fa-trophy"></i> </h4>
+                                </div>
+                                <div className="card-text" style={{marginLeft : '10px'}}>
+                                    trophy Php
+                                </div>
+                                <a style={{ margin : '10px'}}  href="#" className="btn btn-success">Consulter</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

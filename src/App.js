@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Hom from './Screens/Hom/Hom';
 import Achievment from './Screens/Achievment/Achievment';
+import DashBoard from './Screens/DashBoard/DashBoard';
 import Notification from './components/Notification/Notification';
 
 class App extends Component {
@@ -33,7 +34,7 @@ class App extends Component {
       */
       
       <div className="container-fluid">
-          <Achievment />
+          <DashBoard />
        </div>
     );
   }

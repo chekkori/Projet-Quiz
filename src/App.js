@@ -33,7 +33,7 @@ class App extends Component {
           </Router>
       */
       
-      <div className="container-fluid">
+      <div className="container-fluid" style={{marginLeft:'0px',width:'100%'}}>
           <DashBoard />
        </div>
     );

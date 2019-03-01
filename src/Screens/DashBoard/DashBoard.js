@@ -4,7 +4,7 @@ import DashboardMenu from "../../components/DashboardMenu/DashBoardMenu";
 export default class DashBoard extends Component {
   render() {
     return (
-      <div style={{width:'100%'}}>
+      <div>
         <div style={{width:'100%'}}>
         <NavigationBar />
         </div>

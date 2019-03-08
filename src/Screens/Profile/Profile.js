@@ -30,6 +30,7 @@ export default class Profile extends Component {
                     <CompsntProfil />
                     </div>
             </div>
+            {this.props.children}
         </div>
         
     )

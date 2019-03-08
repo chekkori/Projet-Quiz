@@ -4,12 +4,14 @@ import NavigationBar from './components/NavigationBar/NavigationBar';
 import Login from './Screens/Login/Login';
 import Inscription from './Screens/Inscription/Inscription';
 import Profile from './Screens/Profile/Profile';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter ,Route,browserHistory} from 'react-router-dom';
 import './App.css';
 import Hom from './Screens/Hom/Hom';
 import Achievment from './Screens/Achievment/Achievment';
 import DashBoard from './Screens/DashBoard/DashBoard';
 import Notification from './components/Notification/Notification';
+import {Switch,Link} from 'react-router';
+
 
 class App extends Component {
   render() {
@@ -19,8 +21,8 @@ class App extends Component {
       //<Profile />
       //<Inscription />
       //<Achievment />
-      /* 
-          <Router>
+       
+          /*<Router>
               <div>
                
                 <Switch>
@@ -30,12 +32,33 @@ class App extends Component {
                  <Route path="/Profile" exact render={() => <Profile />} />
                 </Switch>
               </div>
-          </Router>
-      */
-      
-      <div className="container-fluid" style={{marginLeft:'0px',width:'100%',backgroundColor:'#ebebe0'}}>
-          <DashBoard />
-       </div>
+          </Router>*/
+
+           
+             
+               
+                <div>
+                   
+                
+                    <Switch>
+                        <Route exact path={"/"} component={Hom}/>
+                        <Route path={"/dashBoard"} component={DashBoard} />
+                        <Route path={"/inscription"} component={Inscription} />
+                        <Route path={"/achievement"} component={Achievment} />
+                        <Route path={"/profile"}  component={Profile} />
+                        <Route path={"/login"}  component={Login} />
+                        <Route path={"/notification"}  component={Notification} />
+                    </Switch>
+                </BrowserRouter>
+               
+                </div>
+                 
+
+                
+                
+              
+          
+       
     );
   }
 }

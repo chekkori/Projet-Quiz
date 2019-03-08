@@ -36,6 +36,7 @@ export default class Inscription extends Component {
             </form>    
         </div>
     </div>
+    
     )
   }
 }

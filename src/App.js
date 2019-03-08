@@ -21,25 +21,8 @@ class App extends Component {
       //<Profile />
       //<Inscription />
       //<Achievment />
-       
-          /*<Router>
-              <div>
-               
-                <Switch>
-                  <Route path="/hom" exact render={() => <Hom /> } />
-                 <Route path="/inscription" exact render={() => <Inscription /> } />
-                 <Route path="/Login" exact render={() => <Login />} />
-                 <Route path="/Profile" exact render={() => <Profile />} />
-                </Switch>
-              </div>
-          </Router>*/
-
-           
              
-               
-                <div>
-                   
-                
+                <BrowserRouter>
                     <Switch>
                         <Route exact path={"/"} component={Hom}/>
                         <Route path={"/dashBoard"} component={DashBoard} />
@@ -51,14 +34,6 @@ class App extends Component {
                     </Switch>
                 </BrowserRouter>
                
-                </div>
-                 
-
-                
-                
-              
-          
-       
     );
   }
 }

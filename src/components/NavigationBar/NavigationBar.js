@@ -28,15 +28,15 @@ export default class NavigationBar extends Component {
                     </li>
 
                     <li className="nav-item active">
-                        <Link className="nav-link" to="friends"><i className="fa fa-user"></i>Friends</Link>
+                        <Link className="nav-link" to="/friends"><i className="fa fa-user"></i>Friends</Link>
                     </li>
 
                     <li className="nav-item active">
-                        <Link className="nav-link" to="setting"><i className="fa fa-cog"></i>Setting</Link>
+                        <Link className="nav-link" to="/setting"><i className="fa fa-cog"></i>Setting</Link>
                     </li>
 
                     <li className="nav-item active">
-                        <Link className="nav-link" href="topScore"><i className="fa fa-tasks"></i>Top Score</Link>
+                        <Link className="nav-link" to="/topScore"><i className="fa fa-tasks"></i>Top Score</Link>
                     </li>
                     </ul>
                     <UserInfos />
